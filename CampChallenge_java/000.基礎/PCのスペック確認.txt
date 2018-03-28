@@ -1,0 +1,12 @@
+スペック
+
+プロセッサ:Inter(R)Core(TM)i5-3320M CPU @ 2.60Ghz 2.60GHz
+
+メモリ:4.00GB (3.86GB usable)
+
+HDD:232GB
+
+グラボ:Intel(r)Graphics4000
+
+DirectX:DirectX 12
+
