@@ -23,18 +23,8 @@ public class Dog {
             this.age = a;
         }
         
-        /*
-        public void print(PrintWriter pw){
-            pw.print(name);
-            pw.print(age);
-            }
-        */
-        
-        
         public void print(){
             String print = "名前は" + this.name + "<br>年齢は" + this. age;
             System.out.print(print);
             }
-        
-    
-}
+    }
