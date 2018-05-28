@@ -6,6 +6,7 @@
 package org.camp.ErrorHandling;
 
 import java.sql.*;
+
 /**
  *
  * @author guest1Day
@@ -30,7 +31,9 @@ public class ErrorHandling {
                 } catch (Exception e_con) {
                     System.out.println(e_con.getMessage());
                 }
-            }
-        }    
+            }    
+        }
     }
 }
+    
+
