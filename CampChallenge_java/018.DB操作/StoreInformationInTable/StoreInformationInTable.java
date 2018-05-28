@@ -12,7 +12,7 @@ import java.sql.*;
  * @author guest1Day
  */
 public class StoreInformationInTable {
-    public static void main(String[] args){
+     public static void main(String[] args){
      Connection db_con = null;
      PreparedStatement db_st = null;
      ResultSet db_data = null;
@@ -28,7 +28,7 @@ public class StoreInformationInTable {
             
             db_con.close();
             db_st.close();
-            db_con.close();
+            db_data.close();
             
         } catch (SQLException e_sql) {
             System.out.println("接続時にエラーが発生しました:"+e_sql.toString());
@@ -45,3 +45,5 @@ public class StoreInformationInTable {
         }    
     }
 }
+    
+
