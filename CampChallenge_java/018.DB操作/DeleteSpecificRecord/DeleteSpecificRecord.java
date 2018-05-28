@@ -37,7 +37,7 @@ public class DeleteSpecificRecord {
             
             db_con.close();
             db_st.close();
-            db_con.close();
+            db_data.close();
             
         } catch (SQLException e_sql) {
             System.out.println("接続時にエラーが発生しました:"+e_sql.toString());
