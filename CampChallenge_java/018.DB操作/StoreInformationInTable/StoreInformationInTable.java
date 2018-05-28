@@ -22,20 +22,9 @@ public class StoreInformationInTable {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             db_con = DriverManager.getConnection("jdbc:mysql://localhost:3306/geekjob_db","yuta","19920707");
             
-            
             db_st = db_con.prepareStatement ("INSERT INTO profiles(profilesID,name,tel,age,birthday)VALUES(3,'田中 太郎','0120-7777-7777',20,'2000-7-7')");
-                    
-//            検索        
-//            db_st = db_con.prepareStatement("select * from profiles where name = ? OR age=?");
-//            db_st.setString(1, "田中 実");
-//            db_st.setInt(2,30);
             
             db_st.executeUpdate();
-
-
-//            while(db_data.next()){
-//                System.out.print("名前：" + db_data.getString("name") + "<br>");
-//            }
             
             db_con.close();
             db_st.close();
@@ -56,4 +45,3 @@ public class StoreInformationInTable {
         }    
     }
 }
-
