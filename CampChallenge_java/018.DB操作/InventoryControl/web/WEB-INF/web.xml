@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginFunction</servlet-name>
+        <servlet-class>org.camp.LoginFunction.LoginFunction</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddStock</servlet-name>
+        <servlet-class>org.camp.AddStock.AddStock</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InventoryList</servlet-name>
+        <servlet-class>org.camp.AddStock.InventoryList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginFunction</servlet-name>
+        <url-pattern>/LoginFunction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddStock</servlet-name>
+        <url-pattern>/AddStock</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InventoryList</servlet-name>
+        <url-pattern>/InventoryList</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
